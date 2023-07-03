@@ -16,8 +16,15 @@ namespace Assets.Src.Personaje.ListaPersonajes
             nombre = "La Dama Negra";
         }
 
-        public override void Correr(NavMeshAgent navMeshAgent, Animator animator, AudioSource audioRun, Input input, float velocidadPj, bool isRun)
+        public override void Correr(NavMeshAgent navMeshAgent, Vector3 objetivo)
         {
+            Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit h;
+            if (Physics.Raycast(r, out h))
+            {
+                objetivo = h.point;
+                navMeshAgent.SetDestination(objetivo);
+            }
         }
     }
 }

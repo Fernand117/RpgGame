@@ -1,7 +1,8 @@
 using Assets.Src.Hechizos;
 using Assets.Src.Hechizos.HechizoBase;
 using System.Collections;
-using System.Collections.Generic;
+using Assets.Src.Personaje.PersonajeBase;
+using Src.Personaje;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -23,7 +24,7 @@ public class PersonajeMovimiento : MonoBehaviour
     public GameObject objetoLanzable;
     public GameObject hechizoIni;
     public float fuerzaDisparo;
-    public float masa;
+
     Vector3 posicionInicial;
     Quaternion rotacionInicial;
 
@@ -44,13 +45,16 @@ public class PersonajeMovimiento : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
+            /*Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit h;
             if (Physics.Raycast(r, out h))
             {
                 objetivo = h.point;
                 SetPosition();
-            }
+            }*/
+            string tipoPersonaje = "DamaNegra";
+            PersonajeBaseModel personajeBaseModel = PersonajeFactory.ObtenerPersonaje(tipoPersonaje);
+            personajeBaseModel.Correr(nv, objetivo);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))

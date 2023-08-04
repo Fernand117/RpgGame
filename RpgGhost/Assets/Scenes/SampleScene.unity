@@ -1119,7 +1119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 338349286}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338349285 stripped
 GameObject:
@@ -1170,7 +1170,6 @@ MonoBehaviour:
   objetoLanzable: {fileID: 1077556109}
   hechizoIni: {fileID: 308568655}
   fuerzaDisparo: 100
-  masa: 1
   animMago: {fileID: 338349287}
   duracionAnim: 0
 --- !u!195 &338349289
@@ -2080,7 +2079,7 @@ Transform:
   - {fileID: 1771795608}
   - {fileID: 1463562062}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &576813238
 PrefabInstance:
@@ -2390,7 +2389,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607664830 stripped
 GameObject:
@@ -2970,7 +2969,7 @@ Transform:
   - {fileID: 759104}
   - {fileID: 147093537}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855508000 stripped
 GameObject:
@@ -3986,13 +3985,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077556109}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.1, y: 2.1104136, z: 8.579987}
+  m_LocalPosition: {x: -0.1, y: 2.1104136, z: 310.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1893521451}
-  m_Father: {fileID: 338349286}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &1077556113
 BoxCollider:
@@ -16278,7 +16277,7 @@ Transform:
   - {fileID: 1054154539}
   - {fileID: 1265117500}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1643206195
 Rigidbody:
